@@ -1,13 +1,175 @@
-.header_container {
-    background-color: #FFC017;
-    flex-direction: row;
-    
+*{
+    font-family: medium-content-sans-serif-font, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    margin: 0;
+}
 
-    .logo-img {
-        width: 161.47px;
-        height: 25px;
-        vertical-align: middle;
-        flex-direction: row;
+.header_container {
+    height: 75px;
+    width: 100%;
+    background-color: #FFC017;
+    position: sticky;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    .nav-container {
+        display: flex;
+        justify-content: flex-end;
     }
 
+    .logo-header{
+        margin-left: 64px;
+        margin-right: auto;
+        cursor: pointer;
+        display: flex;
+    }
+
+    .logo-img {
+        width: auto;
+        height: 25px;
+    }
+
+    .nav-links {
+        cursor: pointer;
+        list-style: none;
+        margin-right: 64px;
+        
+
+        .nav-item {
+            display: inline-block;
+            padding: 0 20px;
+        }
+    }
+
+   .btn-started {
+            background-color: black;
+            color: white;
+            border: none;
+            border-radius: 99em;
+            border-width: 1px;
+            border-color: black;
+            cursor: pointer;
+            padding: 8px 16px;
+            font-size: 14px;
+            font-family: sohne, "Helvetica Neue", Helvetica, Arial, sans-serif;
+            padding: 8px 16px;
+        }
+}
+
+.intro-section {
+    background-color: #FFC017;
+    width: 100%;
+    height: 455px;
+    z-index: -1;
+    display: grid;
+
+    .intro-container{
+        padding-top: 64px;
+
+        .intro-title {
+            margin-left: 64px;
+            font-family: gt-super, Georgia, Cambria, "Times New Roman", Times, serif;
+            font-size: 106px;
+        }
+    }
+
+    .description-container{
+        padding-top: 30px;
+
+        .intro-description {
+            width: 460px;
+            height: 48px;
+            margin-left: 64px;
+            font-size: 24px;
+            font-family: medium-content-sans-serif-font, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;;
+        }
+    }
+
+    .btn-container {
+        padding: 64px 0px;
+        
+        .btn-description{
+            width: 213px;
+            height: 42px;
+            background-color: black;
+            color: white;
+            border: none;
+            border-radius: 99em;
+            border-width: 1px;
+            border-color: black;
+            cursor: pointer;
+            padding: 8px 16px;
+            font-size: 20px;
+            font-family: sohne, "Helvetica Neue", Helvetica, Arial, sans-serif;
+            padding: 8px 16px;
+            display: flex;
+            flex-direction: column;
+            margin-left: 64px;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+
+    .animation-container {
+        position: absolute;
+        z-index: 1;
+        display: flex;
+        margin-left: 528px;
+    }
+}
+
+.trending-section {
+    padding-top: 30px;
+    margin-left: 64px;
+    margin-right: 64px;
+    border-bottom: black;
+
+    .trending-title-container {
+        vertical-align: middle;
+    }
+
+    .trending-title {
+        display: inline-block;
+        margin-left: 10px;
+        font-size: 16px;
+    }
+
+    .card {
+        border: none;
+    }
+
+    .number-trending{
+        margin-top: 5px;
+        font-size: 32px;
+        font-weight: 750;
+        font-family: sohne, "Helvetica Neue", Helvetica, Arial, sans-serif;
+        opacity: .1;
+    }
+  
+}
+
+.post-card {
+    display: flex;
+    flex-direction: row;
+}
+
+.img-post-card {
+    margin-left: 20px;
+    .img-post {
+    width: 200px;
+    height: 134px;
+    cursor: pointer;
+    }
+}
+
+.post-card-body {
+    margin-left: 64px;
+}
+
+h5 {
+    cursor: pointer;
+}
+
+.card-text {
+    cursor: pointer;
 }
