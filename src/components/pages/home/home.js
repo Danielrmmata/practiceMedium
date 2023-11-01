@@ -117,7 +117,8 @@ export default function home() {
               <p class="card-text">David Bowles</p>
               <h5 class="card-title">Tomicca: Our Departed on the Day of the Dead</h5>
               <p class="card-text text-muted">Without getting into just how much Día de Muertos or Day of the Dead in Mexico is...</p>
-              <p class="card-text"><small class="text-muted">Oct 29 · 6 min read</small><button className='btn-started'>Theme</button><img src={ savePostIcon }/></p>
+              <p class="card-text"><small class="text-muted">Oct 29 · 6 min read · </small>
+              <button className='btn-theme text-muted'>Theme</button><img src={ savePostIcon }/></p>
             </div>
             <div className='img-post-card'>
               <img className='img-post' src='https://picsum.photos/200/134'/>
