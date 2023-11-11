@@ -22,17 +22,25 @@ export default function PostView() {
         fetchPost()
     }, []);
     return (
-        <div className="postContainer">
+        <div className="post-card">
             {
                 post && (
                     <>
-                        <h2>{post.title}</h2>
-                        <h3>{post.author?.name} | {post.createdAt}</h3>
-                        <p>{post.content}</p>
-                        <p>Comments: {post.comments}</p>
-                    </>
+                        <div className="post-card-body">
+                            <p className="card-text">{ post.author?.name }</p>
+                            <h5 className="card-title">{ post.title }</h5>
+                            <p className="card-text text-muted">{ post.content }</p>
+                            <p className="card-text">
+                            <small className="text-muted">{ post.createdAt }</small>
+                            <button className='btn-theme text-muted'>Theme</button><img/>
+                            </p>
+                        </div>
+                        <div className='img-post-card'>
+                            <img className='img-post' src='https://picsum.photos/200/134'/>
+                        </div>
+                </>
                 )
             }
-        </div>
+      </div>
     )
 }

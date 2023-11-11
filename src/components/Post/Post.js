@@ -4,16 +4,16 @@ import { Link } from "react-router-dom"
 
 export default function Post(props) {
 
-  const { _id, title, author, content, createdAt, comments } = props;
+  const { _id, title, author, content, createdAt, comments } = props
     console.log(props)
 
   return (
     
-    <link to={`/post/${_id}`} className="post">
+    <Link to={`/post/${_id}`} className="post">
 
       <div className="post-card">
         <div className="post-card-body">
-          <p className="card-text">{ author }</p>
+          <p className="card-text">{ author.name }</p>
           <h5 className="card-title">{ title }</h5>
           <p className="card-text text-muted">{ content }</p>
           <p className="card-text">
@@ -26,6 +26,7 @@ export default function Post(props) {
           </div>
       </div>
 
-    </link>
+    </Link>
+    
   )
 }

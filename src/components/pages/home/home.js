@@ -1,8 +1,7 @@
 import React from 'react'
 import "./home.scss"
-import Header from "../../../layouts/header/header.js"
 import TrendingPosts from "../../trendingPosts/trendingPosts.js"
-import PostItem from "../../Post/Post.js"
+import Blog from "../../pages/blog/blog.js"
 import animationSection from "../../../assets/images/animationSection.svg"
 
 export default function home() {
@@ -11,7 +10,7 @@ export default function home() {
   return (
     <div>
       <section>
-        <Header />
+        
       </section>
       
       <section className='intro-section'>
@@ -38,7 +37,7 @@ export default function home() {
       </section>
       
       <section className="post-section">
-        <PostItem />
+        <Blog />
       </section>
 
     </div>

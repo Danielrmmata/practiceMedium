@@ -10,7 +10,7 @@ import PostView from "../pages/post/view/view.js"
 export default function App() {
 
     return(
-        <BrowserRouter>
+    <BrowserRouter>
       <Routes>
         <Route path="/" element={<Header />} >
           <Route index element={<Home />} />

@@ -3,9 +3,12 @@
     width: 100%;
     background-color: #FFC017;
     position: sticky;
+    top: 0rem;
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    z-index: 2;
+    
 
     .nav-container {
         display: flex;

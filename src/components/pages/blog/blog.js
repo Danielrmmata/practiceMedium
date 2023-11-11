@@ -1,18 +1,12 @@
 import React, { useEffect, useState } from "react"
 import "./blog.scss"
-import Post from "../../../components/pages/blog/blog.js"
+import Post from "../../../components/Post/Post.js"
 
 export default function Blog() {
     const [posts, setPosts] = useState([]);
 
     useEffect(() => {
-        const fetchComments = async (postId) => {
-            const response = await fetch(`http://localhost:5001/commentsbypost/${postId}`)
-            const data = await response.json();
-
-            return data.length
-        }
-
+    
         const fetchPosts = async () => {
             const response = await fetch("http://localhost:5001/posts")
             const data = await response.json()
@@ -33,7 +27,6 @@ export default function Blog() {
 
     return (
         <div className="blog">
-            <h1>Blog</h1>
             <div className="posts">
                 {posts.map((post) => (
                     <Post key={post._id} {...post} />
